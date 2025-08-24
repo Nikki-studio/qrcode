@@ -1,0 +1,8 @@
+python # prefferred- python3
+browser 
+
+# pyhon libraries
+flask # pip install flask
+qrcode # pip install qrcode
+Pillow # pip install PIL
+# for image handeling

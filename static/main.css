@@ -1,0 +1,157 @@
+body
+{
+    background: fixed no-repeat url(raining.gif) center/cover;
+    height: 100dvh;
+    width: 100%;
+}
+div#container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+}
+div#FormWrap
+{
+    height: calc(100% - 40px); ;
+    width: calc(50% - 40px);
+    border: 0;
+    margin: 20px;
+    padding: 0;
+    margin-right: 0;
+    background: rgba(45, 44, 44, 0.268);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+div#ImageWrap
+{
+    height: calc(100% - 40px); ;
+    width: calc(50% - 40px);
+    border: 0;
+    margin: 20px;
+    padding: 20px;
+    background:  rgba(15, 14, 14, 0.268);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: scroll;
+}
+form.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+form.form *
+{
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 0;
+    border-radius: 12px;
+    font-size: 1.2em;
+}
+
+
+input[type="file"]
+{
+    background: rgba(255, 255, 255, 0.267);
+    color: white;
+    transition: 0.3s;
+    overflow: hidden;
+    resize: both;
+    user-select: none;
+    outline: none;
+    color: rgb(0, 255, 170);
+}
+
+
+
+input[type="file"]::file-selector-button
+{
+    background: rgba(182, 182, 182, 0.835);
+    color: rgb(14, 14, 14);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0;
+    border-radius: 12px;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+
+
+input[type="url"]
+{
+    background: rgba(255, 255, 255, 0.267);
+    color: white;
+    transition: 0.3s;
+    overflow: hidden;
+    resize: both;
+    user-select: none;
+    outline: none;
+    color: rgb(0, 255, 170);
+}
+input[type="url"]::placeholder
+{
+    color: orangered;
+    opacity: 0.7;
+}
+
+input[type="submit"]
+{
+    background: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input[type="submit"]:hover
+{
+    background: rgb(149, 149, 149);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img.QR_IMAGE
+{
+    margin: 10px;
+    width: calc(100% - 20px);
+    border: 0;
+    background: rgba(185, 185, 185, 0.906);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    backdrop-filter: 0;
+}
+
+img.QR_IMAGE:first-child
+{
+    margin-top: 50px;
+}
+
+img.QR_IMAGE:last-child
+{
+    margin-bottom: 50px;
+}
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qrcode genetator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvtU52VdkzIUfqN0Cf-GJw4Mu0F0qm-GH7g&s" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <div id="FormWrap">
+            <form class="form"  action="/submit" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" placeholder="Choose file">
+                <input type="url" name="url" autofocus placeholder="Enter URL here">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="ImageWrap">
+            {% if paths %}
+                {% for path in paths %}
+                    <img class="QR_IMAGE" src="{{ url_for('static',filename=path) }}" alt="qrcode">
+                    {% endfor %}
+            {% endif %}
+        </div>
+    </div></div>
+    <script src="{{ url_for('static',filename='main.js') }}"></script>
+</body>
+</html>
